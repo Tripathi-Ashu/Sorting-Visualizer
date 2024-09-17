@@ -1,0 +1,128 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1c92d2, #f2fcfe);
+    color: #333;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.select-algorithm {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.generate-new {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.generate-new p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+input[type="number"] {
+    width: 80%;
+    padding: 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#generateBtn {
+    background-color: #1c92d2;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generateBtn:hover {
+    background-color: #165a91;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+#solveBtn {
+    background-color: #76c7c0;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#solveBtn:hover {
+    background-color: #4a9b92;
+}
+
+.stage {
+    flex: 1;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.stage div {
+    width: 20px;
+    margin: 0 5px;
+    background-color: #1c92d2;
+    transition: height 0.3s ease, background-color 0.3s ease;
+}
+
+.stage div.sorted {
+    background-color: #76c7c0;
+}
